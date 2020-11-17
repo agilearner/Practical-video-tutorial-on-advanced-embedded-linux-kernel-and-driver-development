@@ -1,29 +1,40 @@
-## Welcome to GitHub Pages
+<!DOCTYPE HTML>
+<html lang="en-US">
 
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<link rel="stylesheet" href="./js/DPlayer.min.css">
-<script src="./js/DPlayer.min.js"></script>
 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DPlayer</title>
+	<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+  </head>
+<body>
 <div id="dplayer"></div>
 <script>
 const dp = new DPlayer({
     container: document.getElementById('dplayer'),
-    screenshot: true,
     video: {
-        url: '5.mp4',
-        pic: 'demo.jpg',
-        thumbnails: 'thumbnails.jpg',
+        url: 'https://github.com/agilearner/Practical-video-tutorial-on-advanced-embedded-linux-kernel-and-driver-development/blob/gh-pages/1/1-1.m3u8',
+        type: 'hls',
     },
-    subtitle: {
-        url: 'webvtt.vtt',
-    },
-    danmaku: {
-        id: 'demo',
-        api: 'https://api.prprpr.me/dplayer/',
+    pluginOptions: {
+        hls: {
+            // hls config
+        },
     },
 });
 </script>
 
 
+</body>
+</html>
 
-<video width="658" height="444" preload="none" controls="controls"><source src="/5.mp4" /></video>
+
+
+
+
+
+
+
+
