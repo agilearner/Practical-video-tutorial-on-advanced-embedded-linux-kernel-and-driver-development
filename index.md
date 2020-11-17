@@ -15,7 +15,7 @@
 const dp = new DPlayer({
     container: document.getElementById('dplayer'),
     video: {
-        url: './1/1-1.m3u8',
+        url: 'https://cdn.jsdelivr.net/gh/agilearner/Practical-video-tutorial-on-advanced-embedded-linux-kernel-and-driver-development/gh-pages/1/1-1.m3u8',
         type: 'hls',
     },
     pluginOptions: {
