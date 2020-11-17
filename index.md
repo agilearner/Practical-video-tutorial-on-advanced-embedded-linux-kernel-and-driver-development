@@ -11,6 +11,10 @@
   </head>
 <body>
 <div id="dplayer"></div>
+
+<video playsinline="" webkit-playsinline="" preload="auto" controls="" src="https://pro-video.xiaoheiban.cn/ihu/206e4370-7f56-48c0-beff-17847687561a.mp4" width="100%"></video>
+
+
 <script>
 const dp = new DPlayer({
     container: document.getElementById('dplayer'),
