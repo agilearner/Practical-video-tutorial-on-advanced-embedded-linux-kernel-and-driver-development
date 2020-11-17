@@ -5,6 +5,7 @@
 <script src="./js/DPlayer.min.js"></script>
 
 <div id="dplayer"></div>
+<script>
 const dp = new DPlayer({
     container: document.getElementById('dplayer'),
     screenshot: true,
@@ -21,6 +22,7 @@ const dp = new DPlayer({
         api: 'https://api.prprpr.me/dplayer/',
     },
 });
+</script>
 
 
 
