@@ -10,7 +10,7 @@ const dp = new DPlayer({
     container: document.getElementById('dplayer'),
     screenshot: true,
     video: {
-        url: './5.mp4',
+        url: '5.mp4',
         pic: 'demo.jpg',
         thumbnails: 'thumbnails.jpg',
     },

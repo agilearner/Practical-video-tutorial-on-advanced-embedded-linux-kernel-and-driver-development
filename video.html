@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DPlayer</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/flv.js/dist/flv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dashjs/dist/dash.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/webtorrent/latest/webtorrent.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<link rel="stylesheet" href="./js/DPlayer.min.css">
+<script src="./js/DPlayer.min.js"></script>
+  </head>
+<body>
+<div id="dplayer"></div>
+<script>
+const dp = new DPlayer({
+    container: document.getElementById('dplayer'),
+    autoplay: false,
+    theme: '#FADFA3',
+    loop: true,
+    lang: 'zh-cn',
+    screenshot: true,
+    hotkey: true,
+    preload: 'auto',
+    logo: 'logo.png',
+    volume: 0.7,
+    mutex: true,
+    video: {
+        url: 'https://agilearner.github.io/%E6%80%8E%E4%B9%88%E7%94%A8%E6%89%8B%E6%9C%BA%E4%BC%A0%E6%AD%8C%E5%88%B0mp4%EF%BC%8C%E7%94%A8%E8%BF%99%E4%B8%AA%E6%96%B9%E6%B3%95%E5%8F%AF%E4%BB%A5%E6%8A%8A%E6%89%8B%E6%9C%BA%E9%87%8C%E7%9A%84%E6%AD%8C%E4%BC%A0%E5%88%B0MP4_%E5%A5%BD%E7%9C%8B%E8%A7%86%E9%A2%91.mp4',
+        thumbnails: 'thumbnails.jpg',
+        type: 'auto',
+    },
+    danmaku: {
+        id: '9E2E3368B56CDBB4',
+        api: 'https://api.prprpr.me/dplayer/',
+        token: 'tokendemo',
+        maximum: 1000,
+        addition: ['https://api.prprpr.me/dplayer/v3/bilibili?aid=4157142'],
+        user: 'DIYgod',
+        bottom: '15%',
+        unlimited: true,
+    },
+    contextmenu: [
+        {
+            text: 'custom1',
+            link: 'https://github.com/DIYgod/DPlayer',
+        },
+        {
+            text: 'custom2',
+            click: (player) => {
+                console.log(player);
+            },
+        },
+    ],
+    highlight: [
+        {
+            text: 'marker for 20s',
+            time: 20,
+        },
+        {
+            text: 'marker for 2mins',
+            time: 120,
+        },
+    ],
+});
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
